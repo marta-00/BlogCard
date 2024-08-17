@@ -7,6 +7,19 @@
 
 body {
     background-color: var(--yellow);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+    height: auto;
 }
 
 .card {
@@ -16,10 +29,6 @@ body {
     box-shadow: 10px 10px 0 0 black;
     padding: 15px;
     width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .card img {
@@ -49,6 +58,12 @@ body {
 .desc {
     color: var(--gray500);
 }
+
+.profile {
+    display: block;
+    margin-bottom: 10px;
+}
+
 .profile img{
     display: block;
     width: 30px;
@@ -65,5 +80,12 @@ body {
     top: 5px;
     color: var(--gray950);
 }
-.attribution { font-size: 11px; text-align: center; }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 10px;
+}
+
 .attribution a { color: hsl(228, 45%, 44%); }
